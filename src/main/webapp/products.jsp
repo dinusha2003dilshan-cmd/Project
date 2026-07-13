@@ -20,8 +20,8 @@
             </select>
           </div>
           <div class="mb-3">
-            <label class="form-label small">Child's Age</label>
-            <input type="number" name="age" min="1" max="16" class="form-control form-control-sm" value="${selectedAge}">
+            <label class="form-label small">Age (Years)</label>
+            <input type="number" name="age" min="1" max="100" class="form-control form-control-sm" value="${selectedAge}">
           </div>
           <div class="mb-3">
             <label class="form-label small">Color</label>
