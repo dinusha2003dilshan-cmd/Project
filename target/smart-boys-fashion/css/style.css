@@ -1,0 +1,46 @@
+:root {
+  --navy: #1b2a4a;
+  --gold: #f2a900;
+  --light-bg: #f7f8fb;
+  --danger: #d9455f;
+  --success: #2e9e5b;
+}
+body { background: var(--light-bg); font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
+
+.navbar-brand { font-weight: 700; color: var(--navy) !important; }
+.navbar-custom { background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+.hero {
+  background: linear-gradient(120deg, var(--navy), #2f4272);
+  color: #fff; padding: 60px 0; border-radius: 0 0 24px 24px; margin-bottom: 32px;
+}
+.hero h1 { font-weight: 800; }
+.btn-gold { background: var(--gold); border-color: var(--gold); color: #1b2a4a; font-weight: 600; }
+.btn-gold:hover { background: #d99400; border-color: #d99400; color: #1b2a4a; }
+
+.product-card { border: none; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: transform .15s ease; height: 100%; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.10); }
+.product-card img { height: 210px; object-fit: cover; width: 100%; background: #eee; }
+.price-tag { color: var(--navy); font-weight: 700; }
+
+.badge-lowstock { background: var(--danger); }
+.badge-instock { background: var(--success); }
+
+.filter-panel { background: #fff; border-radius: 14px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+
+.step-tracker { display: flex; justify-content: space-between; margin: 30px 0; }
+.step-tracker .step { flex: 1; text-align: center; position: relative; }
+.step-tracker .step .circle {
+  width: 36px; height: 36px; border-radius: 50%; background: #dfe4ee; color: #8892a6;
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 6px; font-weight: 700;
+}
+.step-tracker .step.active .circle { background: var(--navy); color: #fff; }
+.step-tracker .step.done .circle { background: var(--success); color: #fff; }
+
+.admin-sidebar { background: var(--navy); min-height: 100vh; color: #fff; }
+.admin-sidebar a { color: #cfd7ea; display: block; padding: 12px 20px; text-decoration: none; }
+.admin-sidebar a:hover, .admin-sidebar a.active { background: rgba(255,255,255,0.08); color: #fff; }
+.stat-card { border-radius: 14px; border: none; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.low-stock-row { background: #fff4f4 !important; }
+
+footer { background: var(--navy); color: #cfd7ea; padding: 30px 0; margin-top: 50px; }
