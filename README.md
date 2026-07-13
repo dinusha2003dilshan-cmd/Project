@@ -46,21 +46,13 @@ private static final String DB_PASSWORD = "root";
 ```
 
 ## 3. Build & Run
-### Option A — Eclipse
-1. `File > Import > Maven > Existing Maven Projects`, select this folder.
-2. Right-click the project → `Properties > Project Facets` → ensure
-   **Dynamic Web Module 6.0** and Tomcat 10 runtime are set.
-3. Add a Tomcat 10 server (`Window > Preferences > Server > Runtime Environments`).
-4. Right-click project → `Run As > Run on Server`.
-5. Visit `http://localhost:8080/smart-boys-fashion/`.
+The easiest way to run this project is using the embedded Cargo Maven plugin which will automatically download Tomcat 10 and deploy the application.
 
-### Option B — Command line (Maven + standalone Tomcat)
+Run this command in your terminal:
 ```bash
-mvn clean package
-cp target/smart-boys-fashion.war $TOMCAT_HOME/webapps/
-$TOMCAT_HOME/bin/startup.sh   # or startup.bat on Windows
+.\mvnw.cmd clean package cargo:run
 ```
-Then open `http://localhost:8080/smart-boys-fashion/`.
+Once you see `Tomcat 10.x started on port [8080]`, open `http://localhost:8080/smart-boys-fashion/`.
 
 ## Project Structure
 ```

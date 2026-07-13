@@ -13,11 +13,13 @@ com\smartboys\model\Customer.class
 com\smartboys\servlet\ProductDetailServlet.class
 com\smartboys\servlet\AdminProductServlet.class
 com\smartboys\model\Admin.class
+com\smartboys\util\SchemaRunner.class
 com\smartboys\dao\WishlistDAO.class
 com\smartboys\servlet\SizeAssistantServlet.class
 com\smartboys\servlet\CartServlet.class
 com\smartboys\dao\AdminDAO.class
 com\smartboys\dao\OrderDAO.class
+com\smartboys\dao\TestDB.class
 com\smartboys\servlet\AdminLoginServlet.class
 com\smartboys\servlet\OrderTrackingServlet.class
 com\smartboys\model\Order.class
